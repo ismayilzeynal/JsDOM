@@ -3,9 +3,9 @@ const messageName = document.getElementById("message-name");
 const messageSurname = document.getElementById("message-surname");
 const messageEmail = document.getElementById("message-email");
 
-document.getElementById("formForInfo").addEventListener("submit", validation);
-
-function validation() {
+document.getElementById("formForInfo").addEventListener("submit", function(event)
+{
+    event.preventDefault()
     let name = document.forms["formForInfo"]["name"].value;
     let surname = document.forms["formForInfo"]["surname"].value;
     let email = document.forms["formForInfo"]["email"].value;
@@ -42,4 +42,4 @@ function validation() {
         messageParagraph.innerHTML += message;
     }
     return false;
-}
+})
