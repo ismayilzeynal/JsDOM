@@ -12,20 +12,22 @@
 <body>
 
     <div class="container">
-        <form onsubmit="return validation()" name="formForInfo">
+        <div class="center">
+        <form name="formForInfo" id="formForInfo">
             <div class="line">
-                <label for="name"> name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" placeholder="Name" name="name">
+                <p id="message-name"> </p>
             </div>
 
             <div class="line">
-                <label for="surname"> surname:</label>
-                <input type="text" id="surname" name="surname">
+                <input type="text" id="surname" placeholder="Surname" name="surname">
+                <p id="message-surname"> </p>
+
             </div>
 
             <div class="line">
-                <label for="email"> e-mail:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" placeholder="E-mail" id="email" name="email">
+                <p id="message-email"> </p>
             </div>
 
             <div class="line">
@@ -33,10 +35,11 @@
             </div>
 
             <div class="btn">
-                <input type="submit" value="submit">
+                <input id="submit" type="submit" value="submit">
             </div>
 
         </form>
+    </div>
     </div>
 
 
