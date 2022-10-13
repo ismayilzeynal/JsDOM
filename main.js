@@ -14,19 +14,19 @@ document.getElementById("formForInfo").addEventListener("submit", function(event
     messageSurname.innerHTML = "";
     messageEmail.innerHTML = "";
 
-    if(name === "" || surname === "" || email === "")
+    if(name.trim().length === 0 || surname.trim().length === 0 || email.trim().length === 0)
     {
-        if (name === "") 
+        if (name.trim().length === 0) 
         {
             messageName.innerHTML += "Name must be filled out";
             messageName.style.color="red";
         }
-        if (surname === "")
+        if (surname.trim().length === 0)
         {
             messageSurname.innerHTML += "Surname must be filled out";
             messageSurname.style.color="red";
         }
-        if (email === "")
+        if (email.trim().length === 0)
         {
             messageEmail.innerHTML += "Email must be filled out";
             messageEmail.style.color="red";
