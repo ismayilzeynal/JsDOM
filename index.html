@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM / BOM</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form onsubmit="return validation()" name="formForInfo">
+            <div class="line">
+                <label for="name"> name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="line">
+                <label for="surname"> surname:</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+
+            <div class="line">
+                <label for="email"> e-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="line">
+                <p id="message"> </p>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="submit">
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
